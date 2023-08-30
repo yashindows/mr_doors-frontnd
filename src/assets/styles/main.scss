@@ -1,0 +1,39 @@
+@import '/node_modules/reset-css/sass/reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './mixins';
+@import './variables';
+
+.wrapper {
+  font-family: $primaryFont;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 100vw;
+  min-height: 100vh;
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+button {
+  font-family: $primaryFont;
+}
+
+[class*='__container'] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import '../../components/header/header.scss';
+
+.main {
+  flex: 1 1 auto;
+  @import '../../components/main/banner/banner.scss';
+  @import '../../components/main/categories/categories.scss';
+  @import '../../components/main/catalog-preview/preview.scss';
+  @import '../../components/main/slider/slider.scss';
+  @import '../../components/main/mr-doors-furniture/mr-doors-furniture.scss';
+}
+
+@import '../../components/footer/footer.scss';

@@ -1,0 +1,36 @@
+.header {
+  &__container {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    column-gap: 142px;
+    align-items: center;
+    .menu-body {
+      display: flex;
+      column-gap: 75px;
+      .menu__link {
+        color: #000;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .menu-user-actions {
+      display: flex;
+      column-gap: 45px;
+      align-items: center;
+      .user-actions__item {
+        .user-actions__link {
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}

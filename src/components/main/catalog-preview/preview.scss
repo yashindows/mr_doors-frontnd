@@ -1,0 +1,39 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+.catalog-preview {
+  margin-bottom: 70px;
+  .preview__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .preview__title {
+      color: #3a3a3a;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%;
+      margin-bottom: 32px;
+    }
+    .preview-row {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+      .card {
+        @include card;
+      }
+    }
+    .preview__link {
+      color: $primaryColor;
+      font-weight: 600;
+      line-height: 150%;
+      padding: 12px 90px;
+      border: 1px solid $primaryColor;
+      transition: 0.1s;
+      &:hover {
+        background-color: $primaryColor;
+        color: #fff;
+      }
+    }
+  }
+}

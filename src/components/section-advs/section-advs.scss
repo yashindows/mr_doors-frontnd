@@ -1,0 +1,29 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 53px;
+  background-color: $bgColor;
+  .adv-box {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    .box__img {
+    }
+    .box-info {
+      .box__title {
+        color: #242424;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 150%;
+      }
+      .box__description {
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.cart-product {
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  & > div {
+    min-width: 200px;
+  }
+  .product__face {
+    display: flex;
+    align-items: center;
+    .product__img {
+      max-width: 111px;
+      min-width: 111px;
+      max-height: 90px;
+      margin-right: 34px;
+    }
+    .product__name {
+      max-width: 150px;
+      font-weight: 600;
+    }
+  }
+
+  .product__price {
+    font-weight: 500;
+    &::after {
+      content: '₽';
+    }
+  }
+  .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.1s;
+    border-radius: 3px;
+    margin-left: 50px;
+    &:hover {
+      background-color: #f03737;
+      color: #fff;
+    }
+  }
+}

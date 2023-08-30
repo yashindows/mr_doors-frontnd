@@ -1,0 +1,18 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+.section-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 316px;
+  background: url('/src/assets/img/backgrounds/section-background.png') center
+    no-repeat;
+  background-size: cover;
+  &__title {
+    color: #000;
+    font-size: 48px;
+    font-weight: 500;
+  }
+}

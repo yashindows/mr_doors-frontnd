@@ -1,0 +1,68 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.cart {
+  .cart__container {
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    .product-column {
+      margin-right: 30px;
+
+      .product-title {
+        padding: 15px 150px 15px 100px;
+        display: flex;
+        column-gap: 150px;
+        background-color: $bgColor;
+        margin-bottom: 55px;
+
+        .product__info {
+          color: #000;
+          font-size: 16px;
+          font-weight: 500;
+          display: inline-block;
+          min-width: 58px;
+        }
+      }
+    }
+    .price-column {
+      text-align: center;
+      padding: 15px 85px 80px;
+      background-color: $bgColor;
+
+      .price__title {
+        color: #000;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 60px;
+      }
+      .price__info {
+        .info__title {
+          color: #000;
+          font-weight: 600;
+          margin-right: 50px;
+        }
+        .info__value {
+          color: $primaryColor;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        margin-bottom: 50px;
+      }
+      .price__buy {
+        padding: 15px 60px;
+        color: #000;
+        font-size: 20px;
+        background-color: transparent;
+        border-radius: 15px;
+        border: 1px solid #000;
+        cursor: pointer;
+        transition: 0.1s;
+        &:hover {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+    }
+  }
+}

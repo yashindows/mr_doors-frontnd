@@ -1,0 +1,16 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.section-banner {
+  margin-bottom: 75px;
+}
+.catalog {
+  &__container {
+    .catalog-row {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 130px;
+    }
+  }
+}

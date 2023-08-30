@@ -1,0 +1,58 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url('/img/banner/banner.png') no-repeat center;
+  background-size: cover;
+  margin-bottom: 55px;
+  &__container {
+    min-height: 720px;
+    position: relative;
+
+    .banner-info {
+      max-width: 643px;
+      padding: 40px;
+      border-radius: 10px;
+      background-color: #e3f0ff;
+      position: absolute;
+      top: 153px;
+      right: -42px;
+      .banner__topTitle {
+        color: $fontColor;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-bottom: 22px;
+      }
+      .banner__title {
+        color: $primaryColor;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 138.75%;
+        max-width: 398px;
+        margin-bottom: 20px;
+      }
+      .banner__text {
+        color: $fontColor;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 133.333%;
+        max-width: 546px;
+        margin-bottom: 55px;
+      }
+      .banner__btn {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 25px 72px;
+        background-color: $primaryColor;
+        transition: 0.1s;
+        cursor: pointer;
+        &:hover {
+          background-color: $hoverColor;
+        }
+      }
+    }
+  }
+}
